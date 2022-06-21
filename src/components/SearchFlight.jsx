@@ -10,9 +10,7 @@ import * as flightsActions from '../actions/flights.actions';
 
 const  SearchFlight = ({ flightsList, getFlightsList }) =>{
   const { search, pathname } = useLocation();
-  const props = useLocation();
   const navigate = useNavigate()
-  console.log(props)
   let searchInfo;
   let searchDate;
 
