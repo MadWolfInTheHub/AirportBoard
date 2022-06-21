@@ -28,7 +28,7 @@ const  SearchFlight = ({ flightsList, getFlightsList }) =>{
   
   useEffect(() => {
     getFlightsList(date)  
-  }, [date])
+  }, [date, getFlightsList])
 
   const handleIsDeparture = () => {
     setIsDeparture(!isDeparture)
@@ -54,7 +54,7 @@ const  SearchFlight = ({ flightsList, getFlightsList }) =>{
       setValue(value)
       newPath(value, date);
     };
-  }, [])
+  }, [date, newPath, value])
   
   return (
     <>

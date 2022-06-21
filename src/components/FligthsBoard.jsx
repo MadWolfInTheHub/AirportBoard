@@ -46,7 +46,7 @@ const FligthsBoard = ({filteredData, isDeparture}) => {
             }
             <td className='status board-table'>{flight.status}</td>
             <td className='airline board-table'>
-              <img className='logo' src={flight.airline.en.logoSmallName}/>
+              <img className='logo' src={flight.airline.en.logoSmallName} alt='img'/>
               {flight.airline.en.name}
             </td>
             <td className='flight board-table'>{`${flight['carrierID.IATA']}${flight.fltNo}`}</td>
